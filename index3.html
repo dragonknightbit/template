@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome E-commerce Store</title>
+    <link rel="icon" type="image/x-icon" href="https://t4.ftcdn.net/jpg/04/42/29/97/360_F_442299780_3MUGoXKcxjESw3UC0cVUOIsCng9AZL9X.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="https://example.com/register" class="btn btn-link">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to Our Store!</h1>
+            <p class="lead">Discover amazing products at great prices.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Shop Now</a>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="wireless.jpg" alt="Product 1" class="product-image">
+                    <h3>Awesome Gadget 1</h3>
+                    <p>This is a short description of the first awesome gadget.</p>
+                    <p class="font-weight-bold">Rs2999.99</p>
+                    <a href="https://example.com/cart?item=gadget1" class="btn btn-success">Add to Cart</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="smart.jpg" alt="Product 2" class="product-image">
+                    <h3>Another Great Item</h3>
+                    <p>Here's a brief description of our second fantastic item.</p>
+                    <p class="font-weight-bold">Rs3650.50</p>
+                    <a href="https://example.com/cart?item=item2" class="btn btn-success">Add to Cart</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="smart1.jpg" alt="Product 3" class="product-image">
+                    <h3>Amazing Product Three</h3>
+                    <p>A concise description for the third amazing product we offer.</p>
+                    <p class="font-weight-bold">Rs2450.75</p>
+                    <a href="https://example.com/cart?item=product3" class="btn btn-success">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Featured Products</h2>
+                <ul>
+                    <li>High-Quality Item A</li>
+                    <li>Best Selling Product B</li>
+                    <li>New Arrival C</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h2>Customer Reviews</h2>
+                <p>"Great products and fast shipping!" - Happy Customer</p>
+                <p>"I love the quality and the prices." - Another Satisfied Buyer</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light mt-4 py-3 text-center">
+        <p>&copy;My Awesome E-commerce Store</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
